@@ -11,8 +11,8 @@ class City:
     def __init__(self, city_name, country_code, city_lat, city_lng):
         self.city_name = city_name
         self.country_code = country_code
-        self.lat = city_lat
-        self.lng = city_lng
+        self.city_lat = city_lat
+        self.city_lng = city_lng
 
 
 # load the city data up
