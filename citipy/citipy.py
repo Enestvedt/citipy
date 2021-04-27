@@ -11,6 +11,8 @@ class City:
     def __init__(self, city_name, country_code):
         self.city_name = city_name
         self.country_code = country_code
+        self.lat = city_lat
+        self.lng = city_lng
 
 
 # load the city data up
@@ -29,7 +31,7 @@ with open(_world_cities_csv_path, 'r') as csv_file:
     for city in cities:
         city_coordinate_key = (float(city[2]), float(city[3]))
         _world_cities_kdtree.add(city_coordinate_key)
-        c = City(city[1], city[0])
+        c = City(city[1], city[0], city[2], city[3])
         WORLD_CITIES_DICT[city_coordinate_key] = c
 
 
