@@ -8,7 +8,7 @@ class City:
     City wraps up the info about a city, including its name, coordinates,
     and belonging country.
     '''
-    def __init__(self, city_name, country_code):
+    def __init__(self, city_name, country_code, city_lat, city_lng):
         self.city_name = city_name
         self.country_code = country_code
         self.lat = city_lat
