@@ -29,7 +29,7 @@ with open(_world_cities_csv_path, 'r') as csv_file:
 
     # populate geo points into kdtree
     for city in cities:
-        city_coordinate_key = (float(city[2]), float(city[3]),"","")
+        city_coordinate_key = (float(city[2]), float(city[3]))
         _world_cities_kdtree.add(city_coordinate_key)
         c = City(city[1], city[0], city[2], city[3])
         WORLD_CITIES_DICT[city_coordinate_key] = c
